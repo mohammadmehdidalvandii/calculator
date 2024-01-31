@@ -1,7 +1,7 @@
 /* ---------------- root = variable ------------------ */
 :root{
     --color-bgColor-1: #455A64;
-    --color-bgColor-1: #263238;
+    --color-bgColor-2: #263238;
     --color-btn-1: #CFD8DC;
     --color-btn-2: #607D8B;
     --color-display: #ECEFF1;
@@ -19,7 +19,60 @@ body{
     font-size: 1rem;
     color:#ffffff;
     width: 100%;
-    height: 100dvh;
     background-color: var(--color-bgColor-1);
 }
 /* ---------------- body ------------------ */
+
+/* ---------------- Start style ------------------ */
+.wrapper{
+    display: block;
+    padding: 1rem;
+    margin: 6rem auto;
+    width: 300px;
+    height: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 5px var(--color-bgColor-2)    ;
+    background-color: var(--color-bgColor-2);
+}
+.calculator{
+    width: 100%;
+    height: 100%;
+}
+.calculator_display{
+    width: 100%;
+    height: 6rem;
+    border-radius: 0.3rem;
+    background-color: var(--color-display);
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    color: var(--color-text);
+}
+.wrapper_buttons{
+    display: block;
+    width: 100%;    
+    margin-top: 1rem;
+}
+.wrapper_btn{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+.btn{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-btn-1);
+    color: var(--color-text);
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0.4rem;
+    transition: all 0.3s linear;
+}
+.btn:hover{
+    background-color: var(--color-btn-2);
+}
+/* ---------------- End style ------------------ */
