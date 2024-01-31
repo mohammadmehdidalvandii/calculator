@@ -14,39 +14,39 @@
 <body>
     <div class="wrapper">
         <div class="calculator">
-            <div class="calculator_display">1</div>
+            <div class="calculator_display">0</div>
             <div class="wrapper_buttons">
                 <div class="wrapper_btn">
-                    <button class="btn">C</button>
-                    <button class="btn">/</button>
-                    <button class="btn">%</button>
-                    <button class="btn">/</button>
+                    <button class="btn" onclick="clearDisplay()">C</button>
+                    <button class="btn" onclick="clickOperator('/')">/</button>
+                    <button class="btn" onclick="clickOperator('%')">%</button>
                 </div>
                 <div class="wrapper_btn">
-                    <button class="btn">7</button>
-                    <button class="btn">8</button>
-                    <button class="btn">9</button>
-                    <button class="btn">*</button>
+                    <button class="btn" onclick="clickNumber(7)">7</button>
+                    <button class="btn" onclick="clickNumber(8)">8</button>
+                    <button class="btn" onclick="clickNumber(9)">9</button>
+                    <button class="btn" onclick="clickOperator('*')">*</button>
                 </div>
                 <div class="wrapper_btn">
-                    <button class="btn">4</button>
-                    <button class="btn">5</button>
-                    <button class="btn">6</button>
-                    <button class="btn">-</button>
+                    <button class="btn" onclick="clickNumber(4)">4</button>
+                    <button class="btn" onclick="clickNumber(5)">5</button>
+                    <button class="btn" onclick="clickNumber(6)">6</button>
+                    <button class="btn" onclick="clickOperator('-')">-</button>
                 </div>
                 <div class="wrapper_btn">
-                    <button class="btn">1</button>
-                    <button class="btn">2</button>
-                    <button class="btn">3</button>
-                    <button class="btn">+</button>
+                    <button class="btn" onclick="clickNumber(1)">1</button>
+                    <button class="btn" onclick="clickNumber(2)">2</button>
+                    <button class="btn" onclick="clickNumber(3)">3</button>
+                    <button class="btn" onclick="clickOperator('+')">+</button>
                 </div>
                 <div class="wrapper_btn">
-                    <button class="btn">0</button>
-                    <button class="btn">.</button>
-                    <button class="btn">=</button>
+                    <button class="btn" onclick="clickNumber(0)">0</button>
+                    <button class="btn" onclick="clickOperator('.')">.</button>
+                    <button class="btn" onclick="clickResult()">=</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./js/app.js"></script>
 </body>
 </html>
