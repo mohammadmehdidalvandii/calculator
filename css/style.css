@@ -1,0 +1,25 @@
+/* ---------------- root = variable ------------------ */
+:root{
+    --color-bgColor-1: #455A64;
+    --color-bgColor-1: #263238;
+    --color-btn-1: #CFD8DC;
+    --color-btn-2: #607D8B;
+    --color-display: #ECEFF1;
+    --color-text: #424242;
+    --color-red: #D50000;
+}
+/* ---------------- root = variable ------------------ */
+
+/* ---------------- body ------------------ */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' ,sans-serif;
+    font-size: 1rem;
+    color:#ffffff;
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--color-bgColor-1);
+}
+/* ---------------- body ------------------ */
